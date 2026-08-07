@@ -22,6 +22,7 @@ That work often includes:
 - Mobile controls and performance optimization
 - Automated testing and reproducible simulation
 - Content pipelines and large-scale game balancing
+- Lots of others stuff that won't be caught or optimized the first time around
 
 Instead of starting from scratch, begin with an open source project that has already solved many of these expensive problems. The projects below can serve as playable references, reusable foundations, learning resources, or starting points for your own AI-assisted game.
 
