@@ -4,7 +4,7 @@
 
 ### Start with a working game foundation instead of an empty prompt.
 
-[![Projects](https://img.shields.io/badge/projects-6-7c3aed?style=for-the-badge)](#project-directory)
+[![Projects](https://img.shields.io/badge/projects-9-7c3aed?style=for-the-badge)](#project-directory)
 [![Pull requests welcome](https://img.shields.io/badge/pull_requests-welcome-22c55e?style=for-the-badge)](#add-a-project)
 
 </div>
@@ -36,10 +36,13 @@ Projects are listed alphabetically. Each **last updated** badge reads the latest
 | Project | Game / foundation | Primary technologies | License | Activity |
 | --- | --- | --- | --- | --- |
 | [Blocks Beyond the Stars](#blocks-beyond-the-stars) | 3D voxel space crafting and survival sandbox | Unity, C#, .NET | AGPL-3.0 | [![Last updated](https://img.shields.io/github/last-commit/marceld23/BlocksBeyondTheStars?display_timestamp=committer&label=last%20updated&style=flat-square)](https://github.com/marceld23/BlocksBeyondTheStars/commits/main) |
+| [Claude of Duty](#claude-of-duty) | Procedurally generated browser FPS and rendering showcase | JavaScript, Three.js, WebGL2, Web Audio | MIT | [![Last updated](https://img.shields.io/github/last-commit/mshumer/Claude-of-Duty?display_timestamp=committer&label=last%20updated&style=flat-square)](https://github.com/mshumer/Claude-of-Duty/commits/main) |
+| [FarmRise Tycoon](#farmrise-tycoon) | Persistent farming and city-building sandbox | TypeScript, Three.js, Next.js, SQLite | Not specified | [![Last updated](https://img.shields.io/github/last-commit/Glitch-Gaming-Platform/Glitch-Games-FarmRise-Tycoon?display_timestamp=committer&label=last%20updated&style=flat-square)](https://github.com/Glitch-Gaming-Platform/Glitch-Games-FarmRise-Tycoon/commits/main) |
 | [Glitch Games: Biomes](#glitch-games-biomes) | Restored browser-based multiplayer voxel game foundation | TypeScript, React, Three.js, Node.js | MIT | [![Last updated](https://img.shields.io/github/last-commit/Glitch-Gaming-Platform/Glitch-Games-Biomes?display_timestamp=committer&label=last%20updated&style=flat-square)](https://github.com/Glitch-Gaming-Platform/Glitch-Games-Biomes/commits/main) |
 | [Little City](#little-city) | Tiny explorable 3D city planets | JavaScript, Three.js, HTML/CSS | Apache-2.0 | [![Last updated](https://img.shields.io/github/last-commit/craftmygame/little-city?display_timestamp=committer&label=last%20updated&style=flat-square)](https://github.com/craftmygame/little-city/commits/main) |
 | [Migla](#migla) | Cozy browser-based skilling MMO | Rust, TypeScript, Three.js, WebSockets | MIT | [![Last updated](https://img.shields.io/github/last-commit/skridlevsky/migla?display_timestamp=committer&label=last%20updated&style=flat-square)](https://github.com/skridlevsky/migla/commits/main) |
 | [Monster Breeder](#monster-breeder) | Genetics-driven strategy and simulation game | HTML, JavaScript, Web Workers | GPL-3.0-only | [![Last updated](https://img.shields.io/github/last-commit/jamespetts/MonsterBreeder?display_timestamp=committer&label=last%20updated&style=flat-square)](https://github.com/jamespetts/MonsterBreeder/commits/master) |
+| [Regolith](#regolith) | 3D lunar rover survey and exploration game | JavaScript, Three.js, WebGL2, Web Audio | MIT | [![Last updated](https://img.shields.io/github/last-commit/winchxyz/moon-rover?display_timestamp=committer&label=last%20updated&style=flat-square)](https://github.com/winchxyz/moon-rover/commits/main) |
 | [World of ClaudeCraft](#world-of-claudecraft) | Full browser MMO with multiplayer and agent training | TypeScript, Three.js, PostgreSQL, Gymnasium | MIT | [![Last updated](https://img.shields.io/github/last-commit/levy-street/world-of-claudecraft?display_timestamp=committer&label=last%20updated&style=flat-square)](https://github.com/levy-street/world-of-claudecraft/commits/main) |
 
 ## Blocks Beyond the Stars
@@ -53,6 +56,30 @@ This is a strong starting point for projects that need voxel world generation, c
 **Technologies:** Unity 6 and URP, C#, .NET 10, ASP.NET Core, SQLite with optional PostgreSQL, LiteNetLib, MessagePack, WebSockets, Docker, and an optional Python FastAPI/LangChain AI service.
 
 **License:** AGPL-3.0
+
+## Claude of Duty
+
+**Repository:** [mshumer/Claude-of-Duty](https://github.com/mshumer/Claude-of-Duty)
+
+A first-person shooter built in the browser by a coordinated fleet of AI agents. Its 11 subsystems cover a procedural urban combat space, first-person movement, weapons and ballistics, enemy perception and cover behavior, custom physics and ragdolls, synthesized spatial audio, and a modern HDR rendering pipeline. Every texture, mesh, animation, and sound is generated from code at load time rather than loaded from external art assets.
+
+This is a strong reference for browser FPS mechanics, procedural asset generation, custom character and projectile physics, enemy combat AI, advanced WebGL rendering, and visual-regression or performance tooling for agent-built games.
+
+**Technologies:** JavaScript ES modules, Three.js r180, WebGL2, Web Audio API, Vite, Playwright, and PNG-based deterministic screenshot comparison tools.
+
+**License:** MIT. The repository's `package.json` currently lists ISC, so downstream users should review the metadata discrepancy before reuse.
+
+## FarmRise Tycoon
+
+**Repository:** [Glitch-Gaming-Platform/Glitch-Games-FarmRise-Tycoon](https://github.com/Glitch-Gaming-Platform/Glitch-Games-FarmRise-Tycoon)
+
+A single-player farming and city-building sandbox with a persistent career. Players plant, tend, harvest, haul, build, trade, specialize, process goods, manage soil and crop quality, hire workers, use finance and insurance systems, respond to disruptive incidents and seasons, expand across multiple parcels, and contribute to town projects. The repository separates its reusable engine, deterministic simulation rules, save migration, UI, generated asset pipeline, and transition-validating backend.
+
+This is a useful foundation for farming or tycoon games that need progression, contracts and markets, deterministic simulation, grid collision and A* pathfinding, persistent saves, mobile controls, generated art and audio pipelines, and extensive automated verification designed for AI-agent contributions.
+
+**Technologies:** TypeScript, Three.js, Vite, Next.js, React, SQLite, Drizzle ORM, Zod, Blender and Python asset tooling, Vitest, Playwright, and Node.js workspaces.
+
+**License:** Not specified. The repository currently has no license file, so review licensing with the maintainers before reusing its code or assets.
 
 ## Glitch Games: Biomes
 
@@ -101,6 +128,18 @@ This is a useful starting point for genetics simulations, autonomous agents, pro
 **Technologies:** A self-contained HTML/CSS/JavaScript game, browser Web Workers for the authoritative simulation, browser local storage, JSON import/export, and Python test/tutorial harnesses.
 
 **License:** GPL-3.0-only
+
+## Regolith
+
+**Repository:** [winchxyz/moon-rover](https://github.com/winchxyz/moon-rover)
+
+Also titled **Regolith: The Silence at Anaxagoras**, this is a 3D lunar rover survey game that began with a single prompt and was refined through iterative AI-assisted correction rounds. It offers five missions, ground-penetrating radar, core drilling, relay deployment, power and thermal management, a discoverable codex, mobile controls, gamepad support, and an ending-driven exploration campaign on the floor of a lunar crater.
+
+The simulation includes six-wheel suspension, lunar traction and gravity, terrain excavation that feeds back into physics, ballistic dust, procedural terrain and rocks, physically inspired lunar lighting, runtime-generated textures, and synthesized audio. It is a useful starting point for vehicle simulation, deformable terrain, scientific exploration mechanics, procedural audiovisual content, mobile WebGL, or compact no-build browser games.
+
+**Technologies:** JavaScript ES modules, vendored Three.js r160, WebGL2, Web Audio API, HTML, CSS, import maps, `localStorage`, and a dependency-free Node.js static server. The game has no build step or downloaded runtime assets.
+
+**License:** MIT
 
 ## World of ClaudeCraft
 
